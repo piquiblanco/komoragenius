@@ -1,0 +1,376 @@
+:root {
+  --genius-yellow: #ffff64;
+  --genius-black: #000000;
+  --ink: #111111;
+  --ink-soft: #4a4a4a;
+  --paper: #ffffff;
+  --hl: #ffff64;
+  --hl-hover: #ffee00;
+  --line: #e4e4e4;
+  --radius: 6px;
+  --max: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Programme", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--genius-black);
+  border-bottom: 3px solid var(--genius-yellow);
+}
+.site-header__inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 16px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+}
+.brand__mark {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  background: var(--genius-yellow);
+  color: #000;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 20px;
+  transform: skewX(-6deg);
+}
+.brand__word {
+  color: var(--genius-yellow);
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+.brand--small .brand__word { color: var(--genius-black); }
+.brand--small .brand__mark { background: var(--genius-black); color: var(--genius-yellow); }
+
+.site-nav {
+  display: flex;
+  gap: 16px;
+  margin-left: 8px;
+}
+.site-nav a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.85;
+}
+.site-nav a:hover { opacity: 1; color: var(--genius-yellow); }
+
+.site-header__search { flex: 1; }
+.site-header__search input {
+  width: 100%;
+  max-width: 360px;
+  padding: 9px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 14px;
+}
+.site-header__search input::placeholder { color: #9a9a9a; }
+
+.btn {
+  border: none;
+  border-radius: 20px;
+  padding: 9px 18px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn--signup { background: var(--genius-yellow); color: #000; }
+.btn--signup:hover { background: var(--hl-hover); }
+.btn--primary { background: var(--genius-yellow); color: #000; }
+.btn--ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* ---------- Song hero ---------- */
+.song-hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  isolation: isolate;
+}
+.song-hero__bg {
+  position: absolute;
+  inset: -40px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(28px) brightness(0.55);
+  transform: scale(1.15);
+  z-index: -2;
+}
+.song-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.85));
+  z-index: -1;
+}
+.song-hero__content {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  gap: 28px;
+  align-items: flex-end;
+  padding: 48px 16px 32px;
+}
+.song-hero__art {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  background: #222;
+  flex-shrink: 0;
+}
+.song-hero__meta { padding-bottom: 6px; }
+.song-hero__contributors {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(255,255,255,0.15);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+.song-hero__title {
+  margin: 0 0 6px;
+  font-size: 44px;
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.song-hero__artist {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.song-hero__artist:hover { color: var(--genius-yellow); }
+.song-hero__tags {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: #d9d9d9;
+}
+.song-hero__tags .tag b { color: #fff; font-weight: 700; }
+.song-hero__actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ---------- Page body ---------- */
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+.page__grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 40px;
+  align-items: start;
+}
+
+.lyrics-header__title {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 18px;
+}
+.lyrics {
+  font-family: "Programme", "Helvetica Neue", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.72;
+  color: #1b1b1b;
+  white-space: normal;
+}
+.lyrics__section { margin-bottom: 26px; }
+.lyrics__section-header {
+  font-weight: 800;
+  color: #000;
+  margin: 0 0 2px;
+}
+.lyrics__line { display: block; }
+.lyrics__line--blank { height: 0.9em; }
+
+.hl {
+  background: var(--hl);
+  cursor: pointer;
+  padding: 1px 2px;
+  border-radius: 2px;
+  transition: background 0.12s ease;
+}
+.hl:hover { background: var(--hl-hover); }
+.hl.is-active {
+  background: #111;
+  color: var(--genius-yellow);
+}
+.hl-inline {
+  background: var(--hl);
+  padding: 0 3px;
+  border-radius: 2px;
+  color: #000;
+}
+
+.lyrics__loading { color: var(--ink-soft); font-style: italic; }
+
+/* ---------- About ---------- */
+.about {
+  margin-top: 40px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+.about__title { font-size: 22px; font-weight: 800; margin: 0 0 12px; }
+.about__text { font-size: 16px; line-height: 1.7; color: #2a2a2a; white-space: pre-wrap; }
+
+/* ---------- Annotation panel ---------- */
+.annotation-column { position: sticky; top: 78px; }
+.annotation-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fafafa;
+  min-height: 180px;
+  overflow: hidden;
+}
+.annotation-panel__empty {
+  padding: 30px 22px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+.annotation-panel__icon {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #bdbd2a;
+}
+.annotation {
+  border-top: 4px solid var(--genius-yellow);
+}
+.annotation__lyric {
+  padding: 16px 20px 10px;
+  font-weight: 800;
+  font-size: 16px;
+  color: #000;
+  background: #fff;
+}
+.annotation__body {
+  padding: 4px 20px 18px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #2a2a2a;
+  background: #fff;
+  white-space: pre-wrap;
+}
+.annotation__media {
+  padding: 0 20px 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.annotation__image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  display: block;
+}
+.annotation__footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-top: 1px solid var(--line);
+  background: #fafafa;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.annotation__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--genius-yellow);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #000;
+  font-size: 13px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: #f4f4f4;
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+}
+.site-footer__inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 26px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.site-footer__disclaimer { color: #8a8a8a; font-size: 13px; margin: 0; }
+
+/* ---------- Mobile annotation drawer ---------- */
+.annotation-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: flex-end;
+}
+.annotation-drawer.is-open { display: flex; }
+.annotation-drawer__sheet {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px 14px 0 0;
+  max-height: 70vh;
+  overflow-y: auto;
+  animation: slideUp 0.2s ease;
+}
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .page__grid { grid-template-columns: 1fr; }
+  .annotation-column { display: none; }
+  .site-nav { display: none; }
+  .song-hero__content { flex-direction: column; align-items: flex-start; }
+  .song-hero__art { width: 150px; height: 150px; }
+  .song-hero__title { font-size: 32px; }
+}

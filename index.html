@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading… | Genius Lyrics</title>
+  <meta name="description" content="Song lyrics and annotations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Programme:wght@400;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- Top navigation -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#" aria-label="Genius home">
+        <span class="brand__mark">G</span>
+        <span class="brand__word">Genius</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#">Charts</a>
+        <a href="#">Videos</a>
+        <a href="#">Shop</a>
+      </nav>
+      <div class="site-header__search">
+        <input type="search" placeholder="Search lyrics &amp; more" aria-label="Search" />
+      </div>
+      <button class="btn btn--signup" type="button">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Song hero -->
+  <section class="song-hero" id="songHero">
+    <div class="song-hero__bg" id="songHeroBg"></div>
+    <div class="song-hero__overlay"></div>
+    <div class="song-hero__content">
+      <img class="song-hero__art" id="songArt" alt="Album art" />
+      <div class="song-hero__meta">
+        <div class="song-hero__contributors" id="songContributors">1 Contributor</div>
+        <h1 class="song-hero__title" id="songTitle">Song Title</h1>
+        <a class="song-hero__artist" id="songArtist" href="#">Artist Name</a>
+        <div class="song-hero__tags" id="songTags"></div>
+        <div class="song-hero__actions">
+          <button class="btn btn--primary" type="button">▶ Play</button>
+          <button class="btn btn--ghost" type="button">＋ Add to Playlist</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main body -->
+  <main class="page">
+    <div class="page__grid">
+      <article class="lyrics-column">
+        <div class="lyrics-header">
+          <h2 class="lyrics-header__title" id="lyricsTitle">Song Title Lyrics</h2>
+        </div>
+        <div class="lyrics" id="lyrics">
+          <p class="lyrics__loading">Loading lyrics…</p>
+        </div>
+
+        <section class="about" id="aboutSection" hidden>
+          <h3 class="about__title">About “<span id="aboutSongName">Song</span>”</h3>
+          <p class="about__text" id="aboutText"></p>
+        </section>
+      </article>
+
+      <aside class="annotation-column">
+        <div class="annotation-panel" id="annotationPanel">
+          <div class="annotation-panel__empty">
+            <div class="annotation-panel__icon">✎</div>
+            <p>Click a <span class="hl-inline">highlighted lyric</span> to read its annotation.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span class="brand brand--small"><span class="brand__mark">G</span><span class="brand__word">Genius</span></span>
+      <p class="site-footer__disclaimer">This is a parody fan page made for fun. Not affiliated with Genius Media Group.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile annotation drawer -->
+  <div class="annotation-drawer" id="annotationDrawer" aria-hidden="true">
+    <div class="annotation-drawer__sheet" id="annotationDrawerSheet"></div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
