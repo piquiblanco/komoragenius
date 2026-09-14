@@ -57,20 +57,20 @@
     }
   ],
   "annotations": {
-    "a1": { "content": "Drive by shooting. Na Żubardziu nie jest bezpiecznie", "author": "KomoraGenius" },
-    "a2": { "content": "Gosia wolałaby żeby Tymek został w domu i poszedł z nią wcześnie spać", "author": "KomoraGenius" },
-    "a3": { "content": "Dżem czyli rap, muzyka z ziomami", "author": "KomoraGenius" },
-    "a4": { "content": "Dziewczyny nie mają wstępu do komory. Wchodzą tylko chłopaki.", "author": "KomoraGenius" },
-    "a5": { "content": "Gra słów, połączenie kikimory (japoński potwór) i hikikomori (osoba wycofana społecznie). Komora wzywa podmiot liryczny do izolacji, a następnie do szaleństwa.", "image": "assets/img/annotations/a5.jpg", "author": "KomoraGenius" },
-    "a6": { "content": "Weed, marihuana.", "image": "assets/img/annotations/a6.jpg", "author": "KomoraGenius" },
-    "a7": { "content": "Riki tiki to Patryk, jeden z równych gości. Tymek chce spędzić z nim czas", "image": "assets/img/annotations/a7.jpg", "author": "KomoraGenius" },
-    "a8": { "content": "Tymek nie jest lamusem i preferuje mięsne pizze.", "image": "assets/img/annotations/a8.jpg", "author": "KomoraGenius" },
-    "a9": { "content": "Na Żubardziu nie jest bezpiecznie", "author": "KomoraGenius" },
-    "a10": { "content": "Ostateczne pozdrowienie i zyczenia szczęścia – na Żubardziu będziesz ich potrzebować", "author": "KomoraGenius" },
-    "a11": { "content": "Tymek wie o wszystkim, co się dzieje na osiedlu", "author": "KomoraGenius" },
-    "a12": { "content": "Chiquita, marka bananów znana onegdaj jako United Fruit Company, przyczyniła się do wielu zamachów stanu w Ameryce Łacińskiej przy współpracy z CIA", "image": "assets/img/annotations/a12.jpg", "author": "KomoraGenius" },
-    "a13": { "content": "O co kaman - stary program na kanale VIVA, tłumaczący teksty piosenek", "image": "assets/img/annotations/a13.jpg", "author": "KomoraGenius" },
-    "a14": { "content": "Tymek nie cierpi smerfów", "image": "assets/img/annotations/a14.jpg", "author": "KomoraGenius" },
-    "a15": { "content": "Smerfy to kreskówka wydawana w odcinkach. Gargamel jest głównym antagonistą, który próbuje schwytać Smerfy.", "author": "KomoraGenius" }
+    "a1": { "content": "Drive by shooting. Na Żubardziu nie jest bezpiecznie", "author": "Sall" },
+    "a2": { "content": "Gosia wolałaby żeby Tymek został w domu i poszedł z nią wcześnie spać", "author": "Sall" },
+    "a3": { "content": "Dżem czyli rap, muzyka z ziomami", "author": "Sall" },
+    "a4": { "content": "Dziewczyny nie mają wstępu do komory. Wchodzą tylko chłopaki.", "author": "Sall" },
+    "a5": { "content": "Gra słów, połączenie kikimory (japoński potwór) i hikikomori (osoba wycofana społecznie). Komora wzywa podmiot liryczny do izolacji, a następnie do szaleństwa.", "image": "assets/img/annotations/a5.jpg", "author": "Sall" },
+    "a6": { "content": "Weed, marihuana.", "image": "assets/img/annotations/a6.jpg", "author": "Sall" },
+    "a7": { "content": "Riki tiki to Patryk, jeden z równych gości. Tymek chce spędzić z nim czas", "image": "assets/img/annotations/a7.jpg", "author": "Sall" },
+    "a8": { "content": "Tymek nie jest lamusem i preferuje mięsne pizze.", "image": "assets/img/annotations/a8.jpg", "author": "Sall" },
+    "a9": { "content": "Na Żubardziu nie jest bezpiecznie", "author": "Sall" },
+    "a10": { "content": "Ostateczne pozdrowienie i zyczenia szczęścia – na Żubardziu będziesz ich potrzebować", "author": "Sall" },
+    "a11": { "content": "Tymek wie o wszystkim, co się dzieje na osiedlu", "author": "Sall" },
+    "a12": { "content": "Chiquita, marka bananów znana onegdaj jako United Fruit Company, przyczyniła się do wielu zamachów stanu w Ameryce Łacińskiej przy współpracy z CIA", "image": "assets/img/annotations/a12.jpg", "author": "Sall" },
+    "a13": { "content": "O co kaman - stary program na kanale VIVA, tłumaczący teksty piosenek", "image": "assets/img/annotations/a13.jpg", "author": "Sall" },
+    "a14": { "content": "Tymek nie cierpi smerfów", "image": "assets/img/annotations/a14.jpg", "author": "Sall" },
+    "a15": { "content": "Smerfy to kreskówka wydawana w odcinkach. Gargamel jest głównym antagonistą, który próbuje schwytać Smerfy.", "author": "Sall" }
   }
 }
