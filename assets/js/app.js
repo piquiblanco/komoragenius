@@ -46,7 +46,7 @@
     if (song.producer) tagBits.push(`<span class="tag">Prod. <b>${escapeHTML(song.producer)}</b></span>`);
     els.tags.innerHTML = tagBits.join("");
 
-    if (song.about) {
+    if (song.about && els.aboutSection && els.aboutSongName && els.aboutText) {
       els.aboutSection.hidden = false;
       els.aboutSongName.textContent = song.title;
       els.aboutText.textContent = song.about;
